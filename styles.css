@@ -167,7 +167,7 @@ aside.bio#left {
 main.bio {
     width: 40%;
     float: left;
-    text-align: left;
+    text-align: center;
 }
 
 aside.bio#right {
