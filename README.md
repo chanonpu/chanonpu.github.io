@@ -1,2 +1,2 @@
-# chanonpal.github.io
+# chanonpu.github.io
 Resume and Portfolio
