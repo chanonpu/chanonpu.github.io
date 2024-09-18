@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chanon Palawatvichai</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Project.html">Project</a>
+        <a href="Skills.html">Skills</a>
+        <a href="Resume.html">Resume</a>
+        <a href="Bio.html">Bio</a>
+        <a href="Contact.html" id="selected">Contact</a>
+    </nav>
+    <main id="contact">
+        <h2>Contact me</h2>
+        <p><img src="img/tel.png" alt="phone logo" id="contact"> : <a href="tel:437-557-5675">437-557-5675</a> </p>
+        <p><img src="img/Gmail_icon_(2020).svg.png" alt="gmail logo" id="contact"> : <a href="mailto:c.palawatvichai@gmail.com">c.palawatvichai@gmail.com</a> </p>
+        <p><h2>Leave me a message</h2>
+            <form name="contact" method="post" action="https://webdevbasics.net/scripts/demo.php">
+                Name: <input type="text" name="name" id="name"><br>
+                Email: <input type="email" name="email" id="email"><br>
+                Tel: <input type="tel" name="tel" id="tel"><br>
+                Message: <textarea name="message" id="message" rows="5" cols="30"></textarea><br>
+                <input type="submit" value="Send" onclick="return validateForm()">
+            </form>
+        </p>
+        <script>
+            function validateForm() {
+                let message = document.forms["contact"]["message"].value;
+                let name = document.forms["contact"]["name"].value;
+                let email = document.forms["contact"]["email"].value;
+                let tel = document.forms["contact"]["tel"].value;
+                if(message == "") {
+                    alert("Please enter the message");
+                    return false;
+                }
+                else if(name == "") {
+                    alert("Please enter your name");
+                    return false;
+                }
+                else if(email == "" && tel == "") {
+                    alert("Please enter your contact info");
+                    return false;
+                } else {
+                    alert("Thank you for your message");
+                }
+            }
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2023 Chanon</p>
+        <p><a href="mailto:n01603886@humber.ca">Chanon Palawatvichai</a></p>
+    </footer>
+</body>
+</html>
