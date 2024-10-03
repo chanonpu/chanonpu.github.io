@@ -1,47 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Chanon Palawatvichai</h1>
-    </header>
-    <nav>
-        <a href="index.html" id="selected">Home</a>
-        <a href="Project.html">Project</a>
-        <a href="Skills.html">Skills</a>
-        <a href="Resume.html">Resume</a>
-    </nav>
-    <main>
-        <p id="welcome">Welcome To my HomePage</p>
-        <div>
-            <p id="homepage">
-                This is my professional portfolio.<br>
-                I will demonstrate my understanding in HTML, CSS and Javascript here.<br><br>
-                You can click link to see my additional details.
-            </p>
-            <p><img src="img/Hello.png" alt="hello" id="hello"></p>
-        </div>
-        <script>
-            var welcome = document.getElementById("welcome");
-            var text = ["ยินดีต้อนรับ","Welcome to my HomePage"];
-            var currentIndex = 0;
-
-            function changeText() {
-                welcome.textContent = text[currentIndex];
-                currentIndex = (currentIndex+1) % 2;
-            }
-
-            setInterval(changeText,5000);
-        </script>
-    </main>
-    <footer>
-        <p>&copy; 2023 Chanon</p>
-        <p><a href="mailto:n01603886@humber.ca">Chanon Palawatvichai</a></p>
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
