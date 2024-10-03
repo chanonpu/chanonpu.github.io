@@ -26,7 +26,9 @@ function App() {
             {/* Overview Section */}
             <section className="mb-5">
                 <h1>{overview.name}</h1>
+                
                 <p style={{textAlign:'center'}}>{overview.description}</p>
+                <p style={{textAlign:'center'}}>{overview.contact}</p>
             </section>
             
             {/* Projects Section */}
