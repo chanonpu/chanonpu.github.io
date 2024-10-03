@@ -5,48 +5,64 @@ function App() {
     const [overview, setOverview] = useState({});
     const [education, setEducation] = useState([]);
     const [experience, setExperience] = useState([]);
-    const [projects, setProjects] = useState([]); 
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-      // Fetch all data from the local data.json file
-      fetch('/data.json')
-          .then(response => response.json())
-          .then(data => {
-              // Set state with the fetched data
-              setOverview(data.overview);
-              setEducation(data.education);
-              setExperience(data.experience);
-              setProjects(data.project);
-          }).catch((error) => console.error("Error fetching data:", error));;
-  }, []);
+        // Fetch all data from the local data.json file
+        fetch('/data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Set state with the fetched data
+                setOverview(data.overview);
+                setEducation(data.education);
+                setExperience(data.experience);
+                setProjects(data.project);
+            }).catch((error) => console.error("Error fetching data:", error));;
+    }, []);
 
     return (
         <div className="container">
             {/* Overview Section */}
             <section className="mb-5">
                 <h1>{overview.name}</h1>
-                
-                <p style={{textAlign:'center'}}>{overview.description}</p>
-                <p style={{textAlign:'center'}}>{overview.contact}</p>
+
+                <p style={{ textAlign: 'center' }}>{overview.description}</p>
+                <p style={{ textAlign: 'center' }}>{overview.contact}</p>
             </section>
-            
+
             {/* Projects Section */}
             <section className="mb-5">
                 <h2>Projects</h2>
                 <div className="row">
                     {projects.map((project, index) => (
                         <div key={index} className="col-md-4 mb-3">
-                            <div className="card h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">{project.title}</h5>
-                                    <p className="card-text">{project.description}</p>
-                                    <ul>
-                                        {project.techStack.map((tech, idx) => (
-                                            <li key={idx}>{tech}</li>
-                                        ))}
-                                    </ul>
+                            {project.link ? (
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                    <div className="card h-100">
+                                        <div className="card-body">
+                                            <h5 className="card-title">{project.title}</h5>
+                                            <p className="card-text">{project.description}</p>
+                                            <ul>
+                                                {project.techStack.map((tech, idx) => (
+                                                    <li key={idx}>{tech}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            ) : (
+                                <div className="card h-100">
+                                    <div className="card-body">
+                                        <h5 className="card-title">{project.title}</h5>
+                                        <p className="card-text">{project.description}</p>
+                                        <ul>
+                                            {project.techStack.map((tech, idx) => (
+                                                <li key={idx}>{tech}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
+                            )}
                         </div>
                     ))}
                 </div>
@@ -76,7 +92,7 @@ function App() {
                 </ul>
             </section>
 
-            
+
         </div>
     );
 }

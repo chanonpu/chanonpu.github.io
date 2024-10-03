@@ -46,7 +46,8 @@
                 "React",
                 "JavaScript",
                 "Bootstrap"
-            ]
+            ],
+            "link": "https://github.com/chanonpu/CPAN144-project"
         },
         {
             "title": "Task Tracker CLI",
@@ -55,7 +56,8 @@
                 "Java",
                 "Enums",
                 "CLI"
-            ]
+            ],
+            "link": "https://github.com/chanonpu/TaskTracker"
         },
         {
             "title": "Fast Food Ordering System",
