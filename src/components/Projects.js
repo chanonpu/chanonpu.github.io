@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ProjectsSection = styled.section`
   background-color: #0a192f;
   color: #ccd6f6;
-  padding: 100px 150px;
+  padding: 100px 20px; /* Adjust padding for smaller screens */
   text-align: left;
 
   h2 {
@@ -13,12 +13,12 @@ const ProjectsSection = styled.section`
   }
 
   a {
-  color: #66d9ef;
+    color: #66d9ef;
   }
 
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Reduced min width */
     gap: 20px;
   }
 
@@ -27,6 +27,7 @@ const ProjectsSection = styled.section`
     padding: 20px;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Prevent overflow in the card */
   }
 
   .project-card:hover {
@@ -42,7 +43,20 @@ const ProjectsSection = styled.section`
     font-size: 1rem;
     color: #8892b0;
   }
+
+  @media (max-width: 768px) { /* Adjust styles for smaller screens */
+    padding: 100px 20px; /* Add some horizontal padding */
+    h2 {
+      font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .project-grid {
+      grid-template-columns: 1fr; /* Stack cards vertically */
+    }
+  }
 `;
+
+
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -73,7 +87,7 @@ function Projects() {
             </ul>
             {project.link ? (
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <br/>
+                <br />
                 View Project
               </a>) : (<></>)}
           </div>
