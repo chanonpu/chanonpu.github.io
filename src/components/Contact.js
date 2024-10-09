@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ContactSection = styled.section`
   background-color: #0a192f;
   color: #ccd6f6;
-  padding: 100px 150px;
+  padding: 50px 20px; /* Adjusted padding for mobile */
   text-align: center;
 
   h2 {
@@ -31,6 +31,23 @@ const ContactSection = styled.section`
   a:hover {
     background-color: #64ffda;
     color: #0a192f;
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 20px; /* Keep padding consistent for mobile */
+    
+    h2 {
+      font-size: 2rem; /* Slightly smaller font size for headings */
+    }
+
+    p {
+      font-size: 1rem; /* Smaller font size for paragraphs */
+    }
+
+    a {
+      padding: 12px 25px; /* Adjust button padding for a larger clickable area */
+      font-size: 1.2rem; /* Consistent font size for the link */
+    }
   }
 `;
 
