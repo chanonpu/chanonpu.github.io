@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const ExperienceSection = styled.section`
@@ -31,22 +31,32 @@ const ExperienceSection = styled.section`
   }
 `;
 
-const Experience = () => (
-  <ExperienceSection id="experience">
-    <h2>Where I've Worked</h2>
-    <div className="job">
-      <h3>Baker, Tim Hortons 2023 - 2024</h3>
-      <p>Manage two ovens and ensure the showcase is fully stocked with fresh products.</p>
-    </div>
-    <div className="job">
-      <h3>Supply Chain Analyst, PTT Oil and Retail 2019 - 2023</h3>
-      <p>Managed supply chain operations, optimized logistics, and streamlined operations.</p>
-    </div>
-    <div className="job">
-      <h3>Production Engineer Section Head, Siam City Cement 2015 - 2017</h3>
-      <p>Led a team of over 20 people, improving production processes and efficiency in cement production.</p>
-    </div>
-  </ExperienceSection>
-);
+function Experience() {
+
+  const [experience,getExperience] = useState([]);
+
+  useEffect(() => {
+    // Fetch all data from the local data.json file
+    fetch('/data.json')
+        .then((response) => response.json())
+        .then((data) => {
+            // Set state with the fetched data
+            getExperience(data.experience);
+        })
+        .catch((error) => console.error("Error fetching data:", error));
+}, []);
+
+  return (
+    <ExperienceSection id="experience">
+      <h2>Where I've Worked</h2>
+      {experience.map((exp , index) => (
+        <div key={index} className="job">
+          <h3>{exp.jobTitle}</h3>
+          <p>{exp.company} - {exp.year}</p>
+        </div>
+      ))}
+    </ExperienceSection>
+  )
+};
 
 export default Experience;

@@ -48,7 +48,7 @@ function Education() {
 
     return (
         <EducationSection id="education">
-            <h2>Where I've Learned</h2>
+            <h2>My Learning Place</h2>
             {education.map((school, index) => (
                 <div key={index} className="school">
                     <h3>{school.degree}</h3>
