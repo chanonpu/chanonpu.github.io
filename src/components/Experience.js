@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ExperienceSection = styled.section`
   background-color: #0a192f;
   color: #ccd6f6;
-  padding: 100px 150px;
+  padding: 100px 15px;
   text-align: left;
 
   h2 {

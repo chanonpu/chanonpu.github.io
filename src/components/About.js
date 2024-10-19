@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const AboutSection = styled.section`
   background-color: #0a192f;
   color: #ccd6f6;
-  padding: 100px 150px;
+  padding: 50px 15px;
   text-align: center;
 
   h2 {
