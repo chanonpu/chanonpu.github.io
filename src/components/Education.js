@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const EducationSection = styled.section`
   background-color: #0a192f;
   color: #ccd6f6;
-  padding: 100px 15px;
+  padding: 100px 10%;
   text-align: right;
 
   h2 {
