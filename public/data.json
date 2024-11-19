@@ -51,7 +51,7 @@
         },
         {
             "title": "Minesweeper Game",
-            "description": "classic Minesweeper game using JavaFX",
+            "description": "A Classic Minesweeper game using JavaFX",
             "techStack": [
                 "Java",
                 "JavaFX"
