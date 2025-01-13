@@ -52,7 +52,7 @@ function Experience() {
       {experience.map((exp , index) => (
         <div key={index} className="job">
           <h3>{exp.jobTitle}</h3>
-          <p>{exp.company} - {exp.year}</p>
+          <p>{exp.company} ({exp.year})</p>
         </div>
       ))}
     </ExperienceSection>
