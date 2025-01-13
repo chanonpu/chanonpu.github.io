@@ -74,7 +74,18 @@
                 "Express",
                 "Node.js",
                 "MongoDB"
-            ]
+            ],
+            "link": "https://github.com/chanonpu/Steam_Clone"
+        },
+        {
+            "title": "Coffee Explorer",
+            "description": "A mobile application for coffee lover to purchase coffee beans",
+            "techStack": [
+                "React Native",
+                "Redux",
+                "Express"
+            ],
+            "link": "https://github.com/chanonpu/Coffee-Explorer"
         }
     ]
 }
