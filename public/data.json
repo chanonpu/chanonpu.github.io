@@ -40,6 +40,25 @@
     ],
     "project": [
         {
+            "title": "Steam Clone",
+            "description": "A web app for selling and buying games, inspired by Steam.",
+            "techStack": [
+                "Express",
+                "Node.js",
+                "MongoDB"
+            ],
+            "link": "https://github.com/chanonpu/Steam_Clone"
+        },
+        {
+            "title": "Minesweeper Game",
+            "description": "A Classic Minesweeper game using JavaFX",
+            "techStack": [
+                "Java",
+                "JavaFX"
+            ],
+            "link": "https://github.com/chanonpu/MineSweeperGame"
+        },
+        {
             "title": "Black Jack Game",
             "description": "A React project featuring black jack card game",
             "techStack": [
@@ -47,7 +66,7 @@
                 "JavaScript",
                 "Bootstrap"
             ],
-            "link": "https://github.com/chanonpu/Blackjack-Game"
+            "link": "https://github.com/chanonpu/CPAN144-project"
         },
         {
             "title": "Task Tracker CLI",
@@ -66,6 +85,7 @@
                 "Java",
                 "OOP"
             ]
+<<<<<<< HEAD
         },
         {
             "title": "Steam Clone",
@@ -86,6 +106,8 @@
                 "Express"
             ],
             "link": "https://github.com/chanonpu/Coffee-Explorer"
+=======
+>>>>>>> 831529cfc445bad8967f7d4b494564aacf1b0d17
         }
     ]
 }
