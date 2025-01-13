@@ -50,6 +50,16 @@
             "link": "https://github.com/chanonpu/Steam_Clone"
         },
         {
+            "title": "Coffee Explorer",
+            "description": "A mobile application for coffee lover to purchase coffee beans",
+            "techStack": [
+                "React Native",
+                "Redux",
+                "Express"
+            ],
+            "link": "https://github.com/chanonpu/Coffee-Explorer"
+        },
+        {
             "title": "Minesweeper Game",
             "description": "A Classic Minesweeper game using JavaFX",
             "techStack": [
@@ -85,26 +95,6 @@
                 "Java",
                 "OOP"
             ]
-        },
-        {
-            "title": "Steam Clone",
-            "description": "A web app for selling and buying games, inspired by Steam.",
-            "techStack": [
-                "Express",
-                "Node.js",
-                "MongoDB"
-            ],
-            "link": "https://github.com/chanonpu/Steam_Clone"
-        },
-        {
-            "title": "Coffee Explorer",
-            "description": "A mobile application for coffee lover to purchase coffee beans",
-            "techStack": [
-                "React Native",
-                "Redux",
-                "Express"
-            ],
-            "link": "https://github.com/chanonpu/Coffee-Explorer"
         }
     ]
 }
