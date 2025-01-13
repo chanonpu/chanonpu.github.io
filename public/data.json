@@ -85,7 +85,6 @@
                 "Java",
                 "OOP"
             ]
-<<<<<<< HEAD
         },
         {
             "title": "Steam Clone",
@@ -106,8 +105,6 @@
                 "Express"
             ],
             "link": "https://github.com/chanonpu/Coffee-Explorer"
-=======
->>>>>>> 831529cfc445bad8967f7d4b494564aacf1b0d17
         }
     ]
 }
