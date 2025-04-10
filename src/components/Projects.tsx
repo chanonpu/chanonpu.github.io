@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
   const [projects, setProjects] = useState<ProjectData[]>([]);
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch(`${import.meta.env.BASE_URL}data.json`)
       .then((response) => response.json())
       .then((data) => {
         setProjects(data.project);

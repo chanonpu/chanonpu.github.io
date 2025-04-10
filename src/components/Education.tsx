@@ -7,7 +7,7 @@ const Education: React.FC = () => {
   const [education, setEducation] = useState<EducationData[]>([]);
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch(`${import.meta.env.BASE_URL}data.json`)
       .then((response) => response.json())
       .then((data) => {
         setEducation(data.education);
