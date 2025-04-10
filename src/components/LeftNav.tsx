@@ -38,7 +38,7 @@ const LeftNav: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-teal-400 font-bold text-xl">CP</span>
+            <span className="text-teal-400 font-bold text-xl">Chanon P.</span>
           </motion.div>
           
           <button 
