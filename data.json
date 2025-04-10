@@ -43,7 +43,24 @@
             "year": "2015-2017"
         }
     ],
+    "volunteer" : [
+        {
+            "jobTitle": "Web Developer",
+            "company": "Super Athletes Ontario",
+            "year": "2025"
+        }
+    ],
     "project": [
+        {
+            "title": "Triple Seige",
+            "description": "A card game full stack application",
+            "techStack": [
+                "Spring Boot",
+                "Java",
+                "REST API"
+            ],
+            "link": "https://github.com/JacobDey/CPAN228Final"
+        },
         {
             "title": "Steam Clone",
             "description": "A web app for selling and buying games, inspired by Steam.",
@@ -92,14 +109,6 @@
                 "CLI"
             ],
             "link": "https://github.com/chanonpu/TaskTracker"
-        },
-        {
-            "title": "Fast Food Ordering System",
-            "description": "A Java project for fast food ordering using OOP principles.",
-            "techStack": [
-                "Java",
-                "OOP"
-            ]
         }
     ]
 }
