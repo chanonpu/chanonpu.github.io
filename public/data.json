@@ -53,16 +53,16 @@
     "project": [
         {
             "title": "Triple Seige",
-            "description": "A card game full stack application",
+            "description": "A full stack card game application featuring multiplayer battle",
             "techStack": [
                 "Spring Boot",
                 "Java",
-                "REST API"
+                "WebSocket"
             ],
             "link": "https://github.com/JacobDey/CPAN228Final"
         },
         {
-            "title": "Steam Clone",
+            "title": "GameHub",
             "description": "A web app for selling and buying games, inspired by Steam.",
             "techStack": [
                 "Express",
