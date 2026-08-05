@@ -52,6 +52,16 @@
     ],
     "project": [
         {
+            "title": "Ritual",
+            "description": "A full stack card game application featuring multiplayer battle",
+            "techStack": [
+                "Google Cloud",
+                "Antigravity",
+                "AI Agent"
+            ],
+            "image": "image/Ritual.webp"
+        },
+        {
             "title": "Triple Seige",
             "description": "A full stack card game application featuring multiplayer battle",
             "techStack": [
@@ -72,6 +82,7 @@
                 "MongoDB"
             ],
             "link": "https://github.com/chanonpu/Steam_Clone",
+            "image": "image/GameHub.webp",
             "demoLink": "https://gamehub.chanon.dev/" 
         },
         {
