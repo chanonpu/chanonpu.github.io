@@ -27,6 +27,9 @@ export interface OverviewData {
     description: string;
     techStack: string[];
     link: string;
+    image?: string; //optional so it wont break
+    imageType?: "desktop" | "mobile"; // if mobile
+    demoLink?: string; //optional
   }
   
   export interface ResumeData {

@@ -59,7 +59,9 @@
                 "Java",
                 "WebSocket"
             ],
-            "link": "https://github.com/JacobDey/CPAN228Final"
+            "link": "https://github.com/JacobDey/CPAN228Final",
+            "image": "image/TS.webp",
+            "demoLink": "https://triple-siege.chanon.dev/" 
         },
         {
             "title": "GameHub",
@@ -69,7 +71,8 @@
                 "Node.js",
                 "MongoDB"
             ],
-            "link": "https://github.com/chanonpu/Steam_Clone"
+            "link": "https://github.com/chanonpu/Steam_Clone",
+            "demoLink": "https://gamehub.chanon.dev/" 
         },
         {
             "title": "Coffee Explorer",
@@ -79,7 +82,9 @@
                 "Redux",
                 "Express"
             ],
-            "link": "https://github.com/chanonpu/Coffee-Explorer"
+            "link": "https://github.com/chanonpu/Coffee-Explorer",
+            "image": "image/CoffeeExplorer.webp",
+            "imageType": "mobile"
         },
         {
             "title": "Minesweeper Game",
