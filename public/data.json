@@ -43,7 +43,7 @@
             "year": "2015-2017"
         }
     ],
-    "volunteer" : [
+    "volunteer": [
         {
             "jobTitle": "Web Developer",
             "company": "Super Athletes Ontario",
@@ -53,30 +53,31 @@
     "project": [
         {
             "title": "Chromara",
-            "description": "Cross-platform multiplayer card game with AI opponent",
+            "description": "Cross-platform multiplayer card game with AI opponents.",
             "techStack": [
-                "Java Spring Boot",
+                "Java",
+                "Spring Boot",
                 "TypeScript",
-                "Machine Learning"
+                "WebSocket"
             ],
             "image": "image/Chromara.webp",
-            "demoLink": "https://chromara.net/" 
+            "demoLink": "https://chromara.net/"
         },
         {
             "title": "Ritual",
-            "description": "A full stack card game application featuring multiplayer battle",
+            "description": "A coffee brewing guide application created using AI agents and deployed on Google Cloud.",
             "techStack": [
                 "Google Cloud",
                 "Antigravity",
-                "AI Agent"
+                "AI Agents"
             ],
             "image": "image/Ritual.webp"
         },
         {
             "title": "JobTracker",
-            "description": "An auto track job application directly from email",
+            "description": "An application that automatically tracks job applications from email.",
             "techStack": [
-                "Golang",
+                "Go",
                 "IMAP",
                 "PostgreSQL"
             ],
@@ -84,20 +85,20 @@
             "image": "image/JobTracker.webp"
         },
         {
-            "title": "Triple Seige",
-            "description": "A full stack card game application featuring multiplayer battle",
+            "title": "Triple Siege",
+            "description": "A real-time multiplayer card game featuring strategic battles.",
             "techStack": [
-                "Spring Boot",
                 "Java",
+                "Spring Boot",
                 "WebSocket"
             ],
             "link": "https://github.com/JacobDey/CPAN228Final",
             "image": "image/TS.webp",
-            "demoLink": "https://triple-siege.chanon.dev/" 
+            "demoLink": "https://triple-siege.chanon.dev/"
         },
         {
             "title": "GameHub",
-            "description": "A web app for selling and buying games, inspired by Steam.",
+            "description": "A web application for buying and selling games, inspired by Steam.",
             "techStack": [
                 "Express",
                 "Node.js",
@@ -105,11 +106,11 @@
             ],
             "link": "https://github.com/chanonpu/Steam_Clone",
             "image": "image/GameHub.webp",
-            "demoLink": "https://gamehub.chanon.dev/" 
+            "demoLink": "https://gamehub.chanon.dev/"
         },
         {
             "title": "Coffee Explorer",
-            "description": "A mobile application for coffee lover to purchase coffee beans",
+            "description": "A mobile application for discovering and purchasing coffee beans.",
             "techStack": [
                 "React Native",
                 "Redux",
@@ -120,8 +121,8 @@
             "imageType": "mobile"
         },
         {
-            "title": "Minesweeper Game",
-            "description": "A Classic Minesweeper game using JavaFX",
+            "title": "Minesweeper",
+            "description": "A classic Minesweeper game built with JavaFX.",
             "techStack": [
                 "Java",
                 "JavaFX"
@@ -129,8 +130,8 @@
             "link": "https://github.com/chanonpu/MineSweeperGame"
         },
         {
-            "title": "Black Jack Game",
-            "description": "A React project featuring black jack card game",
+            "title": "Blackjack",
+            "description": "A web-based Blackjack card game.",
             "techStack": [
                 "React",
                 "JavaScript",
@@ -140,7 +141,7 @@
         },
         {
             "title": "Task Tracker CLI",
-            "description": "A command-line application to manage tasks using Java.",
+            "description": "A command-line application for creating and managing tasks.",
             "techStack": [
                 "Java",
                 "Enums",
