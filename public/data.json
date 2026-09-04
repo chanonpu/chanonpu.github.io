@@ -52,6 +52,17 @@
     ],
     "project": [
         {
+            "title": "Chromara",
+            "description": "Cross-platform multiplayer card game with AI opponent",
+            "techStack": [
+                "Java Spring Boot",
+                "TypeScript",
+                "Machine Learning"
+            ],
+            "image": "image/Chromara.webp",
+            "demoLink": "https://chromara.net/" 
+        },
+        {
             "title": "Ritual",
             "description": "A full stack card game application featuring multiplayer battle",
             "techStack": [
@@ -60,6 +71,17 @@
                 "AI Agent"
             ],
             "image": "image/Ritual.webp"
+        },
+        {
+            "title": "JobTracker",
+            "description": "An auto track job application directly from email",
+            "techStack": [
+                "Golang",
+                "IMAP",
+                "PostgreSQL"
+            ],
+            "link": "https://github.com/chanonpu/jobTracker",
+            "image": "image/JobTracker.webp"
         },
         {
             "title": "Triple Seige",
